@@ -1,0 +1,137 @@
+.site-footer{
+    background-color: #33323D;
+
+    &__inner{
+        display: flex;
+        align-items: center;
+        height: 80px;
+        padding: 24px 0;
+    }
+
+    
+}
+
+.footer-inner{
+
+    &__logotip{
+        margin-right: 48px ;
+    }
+
+    &__list{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        margin-right: 588px;
+        
+
+    }
+
+    &__item{
+        margin-right: 42px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+    }
+
+
+
+    &__link{
+        text-decoration: none;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        &:hover{
+            color: #5FB4A2;
+         }
+    
+         &:active{
+            color: #5FB4A2;
+         }
+    }
+
+    &__nav{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__items{
+        margin-right: 15px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+   
+
+}
+
+@media only screen and (max-width:798px){
+    .site-footer{
+        width: 100%;
+
+        &__inner{
+           display: flex; 
+           justify-content: space-between;
+        }
+
+       
+    }
+
+    .footer-inner{
+       
+        &__logotip{
+            margin-right: 48px;
+        }
+
+        &__list{
+            margin-right: 0;
+        }
+    }
+}
+
+
+@media only screen and (max-width:598px){
+    .site-footer{
+
+        &__inner{
+           flex-direction: column;
+           height: 354px;
+           padding: 56px 0;
+        }
+
+        
+    }
+
+    .footer-inner{
+
+        &__logotip{
+            margin-right: 0;
+            align-self: center;
+            margin-bottom: 40px;
+        }
+        &__list{
+            flex-direction: column;
+        }
+
+
+
+        &__item{
+            margin-right: 0;
+            margin-bottom: 32px;
+
+            &:last-child{
+                margin-bottom: 42px;
+            }
+        }
+    }
+}

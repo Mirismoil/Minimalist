@@ -1,0 +1,180 @@
+.about{
+    margin-bottom: 150px;
+}
+
+.about-wrapper{
+    display: flex;
+
+    &__line{
+        display: block;
+        width: 350px;
+        background: #33323D;
+        opacity: 0.15;
+        height:1px;
+    }
+    &__line1{
+        margin-top: 60px;
+        display: block;
+        width: 350px;
+        background: #33323D;
+        opacity: 0.15;
+        height:1px;
+    }
+
+
+    &__img{
+        margin-right: 107px;
+
+    }
+
+    &__tab{
+        display: none;
+    }
+
+    &__mb{
+        display: none;
+    }
+
+    &__me{
+        width: 350px;
+        height: 600px;
+        
+    }
+    &__title{
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 28px;
+        font-family: 'Ibarra Real Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        color: #33323D;
+    }
+
+    &__desc{
+        margin: 0;
+        margin-bottom: 41px;
+        width: 350px;
+        height: 360px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #33323D;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+
+
+    &__btn{
+        padding: 17px 36px 17px 32px;
+        width: 202px;
+        height: 48px;
+        border: 1px solid #33323D ;
+        text-decoration: none;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #33323D;
+        
+        &:hover{
+            background-color: #33323D;
+        }
+
+        &:hover{
+            color:#FAFAFA;
+        }
+        
+    }
+}
+
+@media only screen and (max-width:768px){
+
+    .contianer{
+        padding: 0 40px;
+    }
+    .about-wrapper{
+        justify-content: space-between;
+
+        &__img{
+            display: none;
+        }
+
+        &__tab{
+            display: block;
+            width: 100%;
+            
+        }
+        
+        &__mb{
+            display: none;
+        }
+        &__line{
+            width: 100%;
+        }
+
+        &__line1{
+            width: 100%;
+        }
+
+       
+
+        &__me{
+            width: 100%;
+            height: 600px;
+        }
+
+        &__desc{
+            margin-right: 0 !important;
+            width: 100%;
+            height: 360px;
+        }
+    }
+}
+
+@media only screen and (max-width:598px){
+
+    .about-wrapper{
+        display: flex;
+        flex-direction: column;
+
+        &__tab{
+           display: none;
+        }
+
+        &__mb{
+            display: block;
+            width: 100%;
+        }
+
+        &__me{
+            width:100%;
+
+        }
+
+        &__line{
+            width: 100%;
+            margin-top: 32px;
+        }
+
+        &__line1{
+            width: 100%;
+        }
+
+        &__desc{
+            width: 100%;
+            height: 390px;
+        }
+
+       
+
+    }
+
+}
